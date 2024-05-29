@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    header {
+        background-color: #8B0000;
+        color: white;
+        padding: 10px 0;
+    }
+
+    .nav-right a {
+        color: white;
+        text-decoration: none;
+        padding: 0px !important;
+    }
+}
+
+.site-name {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right li {
+    display: inline;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-right a:hover {
+    background-color: #FF6347;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('img/food.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: none; 
+}
+
+.about {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: justify;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.recipes-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipes-preview article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease; 
+}
+
+.recipes-preview article:hover {
+    transform: scale(1.05); 
+}
+
+.recipes-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-link {
+    padding: 0% ;
+    width: 100% ;
+    height: 100% ;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.tequenos-picture{
+    width: 300% !important;
+}
+
+
+
+
+.comments {
+    margin-top: 40px;
+}
+
+.comments hr {
+    margin-bottom: 20px;
+}
+
+.comments h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comments form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.comments label {
+    margin-top: 10px;
+}
+
+.comments input,
+.comments textarea {
+    width: 80%; 
+    max-width: 500px; 
+    margin-bottom: 10px;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+.comments textarea {
+    resize: vertical;
+}
+
+.comments button {
+    padding: 10px 20px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.comments button:hover {
+    background-color: #FF6347;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+

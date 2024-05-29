@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Recetas Venezolanas</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0); 
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .site-name {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-right li {
+            display: inline;
+        }
+
+        .nav-right a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .nav-right a:hover {
+            background-color: #FF6347;
+            border-radius: 5px;
+        }
+
+        .about-page {
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        .about-us h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .about-us p {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+
+        .leader,
+        .team {
+            margin-top: 40px;
+        }
+
+        .leader h3,
+        .team h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img,
+        .leader img {
+            width: 110px; /* Ajusta el tamaño según sea necesario */
+            height: 110px; /* Ajusta el tamaño según sea necesario */
+            border-radius: 50%;
+        }
+
+        .leader img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .leader p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .round-image {
+            border-radius: 50%;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="site-name">Venezuelan Food</a>
+            <ul class="nav-right">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#recipes_preview">Recetas</a></li> <!-- Enlace a la clase recipes_preview -->
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="about-page">
+        <section class="about-us">
+            <h1>NOSOTROS</h1>
+            <p>Somos un grupo de estudiantes de Ingeniería en Informática de la UNERG, 
+                <br>cursando la materia Lenguaje de Programación.</p>
+            <hr>
+            <div class="leader">
+                <h3>Líder</h3>
+                <img src="img/male.jpg" alt="Emanuel Rodríguez" class="round-image">
+                <p>Emanuel Rodríguez</p>
+            </div>
+            
+            <div class="team">
+                <h3>Equipo</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="img/female.jpg" alt="Leniangel Pérez" class="round-image">
+                        <p>Leniangel Pérez</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/female1.jpg" alt="Yaneth Doria" class="round-image">
+                        <p>Yaneth Doria</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/male3.jpg" alt="José Bustamante" class="round-image">
+                        <p>José Bustamante</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/male2.jpg" alt="Isaac Montilla" class="round-image">
+                        <p>Isaac Montilla</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/male4.jpeg" alt="Richard Herrera" class="round-image">
+                        <p>Richard Herrera</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/male5.jpg" alt="David Alegría" class="round-image">
+                        <p>David Alegría</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 | Recetas Venezolanas</p>
+        <p>Creado por: 
+            <a href="#">Grupo #3</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript para cargar el header -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabellon Criollo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Incluir el header -->
+    <div id="header-container"></div>
+    <h1>Pabellon</h1>
+    <hr>
+    <main class="recipe-page">
+        <section class="recipe-details">
+            <img src="../img/pabellon.jpg" alt="Arepas">
+            <div class="details">
+                <h2>Detalles de la Receta</h2>
+                <ul>
+                    <li><strong>Cantidad de Comensales:</strong> 5</li>
+                    <li><strong>Tiempo de Preparación:</strong> 75 minutos</li>
+                    <li><strong>Dificultad:</strong> Media</li>
+                </ul>
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>1/2 kg caraotas negras</li>
+                    <li>2 cebollas medianas</li>
+                    <li>6 ajíes dulces verdes y rojos</li>
+                    <li>1 cabeza ajo</li>
+                    <li>1/2 cdts pimienta negra</li>
+                    <li>1/2 cdts orégano molido</li>
+                    <li>1 tallo cebollín</li>
+                    <li>1 cda azúcar</li>
+                    <li>1/2 kg falda de res o muchacho redondo</li>
+                    <li>1 1/2 tazas arroz</li>
+                    <li>Sal al gusto</li>
+                    <li>1/2 taza aceite onotado</li>
+                    <li>Plátanos maduros</li>
+                    <!-- Agregar más ingredientes según sea necesario -->
+                </ul>
+            </div>
+        </section>
+        
+        <section class="recipe-instructions">
+            <h2>Paso a Paso</h2>
+            <ol>
+                <li>Por un lado poner a remojar las caraotas durante 4 horas aprox., lavarlas y ponerlas a cocinar en suficiente agua hasta q estén blanditas.</li>
+                <li>Aparte poner a sancochar la carne picada en trozos hasta q esté blandita, sacar del caldo y dejar reposar para poder esmechar con los dedos. (reservar el caldo).</li>
+                <li>Picar finamente todos los aliños y poner a sofreir con el aceite onotado, ajo triturado, pimienta y orégano en un sarten o caldero mediano, apartar 2 ó 3 cucharadas de los aliños ya sofritos y agregarselas a las caraotas q ya deben estar blanditas, junto con el azúcar y sal al gusto, dejar cocinar las caraotas unos 15 minutos más sin que sequen demasiado.</li>
+                <li>En el sartén o caldero donde tenemos el resto de los aliños, agregamos la carne ya esmechada, freimos un poco revolviendo para q se mezcle con los aliños y le agregamos una taza del caldo donde sancochamos la carne, agregar sal al gusto y dejar cocinar hasta que se consuma todo el caldo.</li>
+                <li>En una olla mediana poner a calentar 2 tazas del caldo restante, agregar sal al gusto y el arroz, dejar cocinar hasta que esté en el punto deseado.</li>
+                <li>Aparte en una sarten colocar aceite y freir los plátanos cortados en tajadas.</li>
+                <li>Servir como se muestra en la presentación.</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 | Venezuelan Food</p>
+        <p>Creado por: 
+            <a href="../nosotros.html">Grupo #3</a>
+        </p>
+    </footer>
+
+    <script>
+        // Cargar el contenido del header usando fetch()
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Insertar el contenido del header en el contenedor
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

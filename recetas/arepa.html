@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arepas Venezolanas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Incluir el header -->
+    <div id="header-container"></div>
+    <h1>Arepa Venezolana</h1>
+    <hr>
+    <main class="recipe-page container">
+        <section class="recipe-details">
+            <img src="../img/arepa.jpg" alt="Arepas" class="recipe-image">
+            <div class="details">
+                <h2>Detalles de la Receta</h2>
+                <ul>
+                    <li><strong>Cantidad de Comensales:</strong> 4</li>
+                    <li><strong>Tiempo de Preparación:</strong> 30 minutos</li>
+                    <li><strong>Dificultad:</strong> Fácil</li>
+                </ul>
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>2 tazas de harina de maíz precocida</li>
+                    <li>2 tazas de agua tibia</li>
+                    <li>Sal al gusto</li>
+                    <!-- Agregar más ingredientes según sea necesario -->
+                </ul>
+            </div>
+        </section>
+        
+        <section class="recipe-instructions">
+            <h2>Paso a Paso</h2>
+            <ol>
+                <li class="li-ol">En un recipiente, mezcla la harina de maíz con el agua tibia y la sal, hasta obtener una masa homogénea.</li>
+                <li class="li-ol">Forma bolitas con la masa y aplánalas para darles forma de disco.</li>
+                <li class="li-ol">Cocina las arepas en una sartén caliente durante unos 5 minutos por cada lado, o hasta que estén doradas.</li>
+                <li class="li-ol">Una vez cocidas, corta las arepas por la mitad y rellénalas al gusto.</li>
+                <li class="li-ol">Sirve caliente y ¡disfruta!</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 | Venezuelan Food</p>
+        <p>Creado por: 
+            <a href="../nosotros.html">Grupo #3</a>
+        </p>
+    </footer>
+
+    <script>
+        // Cargar el contenido del header usando fetch()
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Insertar el contenido del header en el contenedor
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

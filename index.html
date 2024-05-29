@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Venezolanas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="site-name">Venezuelan Food</a>
+            <ul class="nav-right">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#recipes_preview">Recetas</a></li> <!-- Enlace al id recipes_preview -->
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <img src="img/food.jpg" alt="Comida Venezolana">
+        <!-- Imagen de fondo -->
+    </section>
+    
+    <div class="about">
+        <h2>Sobre Venezuela y su Gastronomía</h2>
+        <p>Venezuela es un país conocido por su diversidad cultural y paisajes impresionantes. 
+            Su gastronomía es un reflejo de esta diversidad, combinando influencias indígenas, africanas y europeas. 
+            Platos emblemáticos como las arepas, el pabellón criollo y las hallacas son solo una
+             muestra de la rica tradición culinaria venezolana. Cada bocado de la comida venezolana cuenta una 
+            historia de sabor y tradición que ha sido transmitida de generación en generación.</p>
+    </div>
+    
+    <main>
+        <section id="recipes_preview" class="recipes-preview">
+            <a href="recetas/arepa.html" class="recipe-link">
+                <article>
+                    <img src="img/arepa.jpg" alt="Arepas">
+                    <h3>Arepas</h3>
+                    <p>Deliciosas arepas venezolanas, perfectas para cualquier comida del día.</p>
+                </article>
+            </a>
+            <a href="recetas/pabellon.html" class="recipe-link">
+                <article>
+                    <img src="img/pabellon.jpg" alt="Pabellón Criollo">
+                    <h3>Pabellón Criollo</h3>
+                    <p>El plato nacional de Venezuela, una combinación de arroz, carne, frijoles y plátanos.</p>
+                </article>
+            </a>
+            <a href="recetas/tequeno.html" class="recipe-link">
+                <article>
+                    <img src="img/tequeno.jpg" alt="Tequenos" class="tequenos-picture">
+                    <h3>Tequeños</h3>
+                    <p>Deliciosos bocados de queso envueltos en masa y fritos a la perfección.</p>
+                </article>
+            </a>
+            <!-- Añadir más enlaces de artículos de recetas según sea necesario -->
+        </section>
+        
+        <section class="comments">
+            <hr>
+            <h2>¡Déjanos saber qué te pareció!</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 | Venezuelan Food</p>
+        <p>Creado por: 
+            <a href="nosotros.html">Grupo #3</a>
+        </p>
+    </footer>
+</body>
+</html>

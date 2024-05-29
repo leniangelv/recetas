@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequeños Venezolanos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Incluir el header -->
+    <div id="header-container"></div>
+    <h1>Tequenos</h1>
+    <hr>
+    <main class="recipe-page">
+        <section class="recipe-details">
+            <img src="../img/tequeno.jpg" alt="Arepas">
+            <div class="details">
+                <h2>Detalles de la Receta</h2>
+                <ul>
+                    <li><strong>Cantidad de Comensales:</strong> 10</li>
+                    <li><strong>Tiempo de Preparación:</strong> 45 minutos</li>
+                    <li><strong>Dificultad:</strong> Media</li>
+                </ul>
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>250 gramos de harina de trigo</li>
+                    <li>1 huevo</li>
+                    <li>80 gramos de mantequilla</li>
+                    <li>5g de azúcar</li>
+                    <li>40 gramos de leche</li>
+                    <li>300 gramos de queso</li>
+                    <li>Aceite para freír</li>
+                    <!-- Agregar más ingredientes según sea necesario -->
+                </ul>
+            </div>
+        </section>
+        
+        <section class="recipe-instructions">
+            <h2>Paso a Paso</h2>
+            <ol>
+                <li>En un bol añade la harina, la mantequilla, la leche, el huevo, el azúcar y la sal. Mezcla hasta obtener una textura arenosa.</li>
+                <li>Amasa con las manos hasta conseguir una masa homogénea. Haz una bola y deja que repose 10-15 minutos.</li>
+                <li>Corta el queso en bastones (alrededor de 6X1 cm).</li>
+                <li>Estira la masa con el rodillo (2 mm de grosor) y corta en tiras largas.</li>
+                <li>Humedece las tiras con agua y envuelve el queso sin dejar huecos.</li>
+                <li>Dóralos en abundante aceite caliente y retira sobre papel absorbente.</li>
+                <li>Sirve los tequeños recién hechos ¡y a disfrutar del irresistible queso fundido!</li>
+            </ol>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 | Venezuelan Food</p>
+        <p>Creado por: 
+            <a href="../nosotros.html">Grupo #3</a>
+        </p>
+    </footer>
+
+    <script>
+        // Cargar el contenido del header usando fetch()
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Insertar el contenido del header en el contenedor
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
